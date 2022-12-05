@@ -1,2 +1,11 @@
 : "result.txt 
 
+Bob
+Robert
+gray
+grey
+First Street
+1st street
+Third
+Thi|3rd
+3rd

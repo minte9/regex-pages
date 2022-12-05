@@ -1,5 +1,15 @@
 : "sample.txt
 
-a
-b
-x
+Bob
+Robert
+John
+gray
+grey
+greay
+greey
+First Street
+Fir1st Sstreet
+1st street
+Third
+Thi|3rd
+3rd
