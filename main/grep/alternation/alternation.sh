@@ -1,4 +1,4 @@
-: "Alterantion |
+: "Alterantion
 Bob|Robert is one regex that matches either
 
 Within a class, the | is just a normal character, like a and e
