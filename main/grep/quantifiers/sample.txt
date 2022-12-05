@@ -4,4 +4,6 @@
 <H2>
 <H3 >
 <H7>
-<H7 >
+<HR SIZE=14>
+<HR  SIZE = 14 >
+<HRSIZE=14>
