@@ -11,8 +11,8 @@ it matches exactly that many
 
 echo ': "result.txt \n' > result.txt
 
-grep '<H[1-6] *>' -E sample.txt >> result.txt
-grep '<HR +SIZE *= *[0-9]+ *>' -E sample.txt >> result.txt
+grep '<H[1-6] *>'               -E sample.txt >> result.txt
+grep '<HR +SIZE *= *[0-9]+ *>'  -E sample.txt >> result.txt
 
 cat 'sample.txt'
 cat 'result.txt'
