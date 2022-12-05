@@ -1,5 +1,5 @@
-: "Alterantion | metacharacter means OR
-Bob|Robert is one regex that matches either.
+: "Alterantion |
+Bob|Robert is one regex that matches either
 
 Within a class, the | is just a normal character, like a and e
 gr[ea]y example, can be written grey|gray, and even gr(a|e)y
