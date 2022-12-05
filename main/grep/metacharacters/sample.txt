@@ -1,0 +1,5 @@
+: "cat sample.txt
+
+Cat at the beggining
+At the end dog
+Birds everywhere bird
