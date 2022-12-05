@@ -14,10 +14,10 @@ Character classes are almost like their own special mini-language
 
 echo ': "result.txt \n' > result.txt
 
-grep 'Bob|Robert' -E sample.txt >> result.txt
-grep 'gr(a|e)y' -E sample.txt >> result.txt
-grep '(Fir|1)st [Ss]treet' -E sample.txt >> result.txt
-grep '[Thi|3]rd' -E sample.txt >> result.txt
+grep 'Bob|Robert'           -E sample.txt >> result.txt
+grep 'gr(a|e)y'             -E sample.txt >> result.txt
+grep '(Fir|1)st [Ss]treet'  -E sample.txt >> result.txt
+grep '[Thi|3]rd'            -E sample.txt >> result.txt
 
 cat 'sample.txt'
 cat 'result.txt'
