@@ -1,0 +1,7 @@
+: "sample.txt
+
+color
+colour
+colur
+colou
+semicolon
