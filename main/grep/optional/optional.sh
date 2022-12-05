@@ -1,7 +1,6 @@
 #!/bin/sh
 
 : "Optional items
-
 Question mark in colou?r means u optional
 It is placed after the character that is optional
 
