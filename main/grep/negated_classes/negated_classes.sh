@@ -23,4 +23,5 @@ echo ': "result.txt \n' > result.txt
 
 grep 'q[^u]' sample.txt --colour >> result.txt
 
-echo 'result.txt saved'
+cat sample.txt
+cat result.txt
