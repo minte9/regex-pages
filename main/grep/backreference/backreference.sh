@@ -13,9 +13,9 @@ To group multiple characters to apply quantifiers (abc)?
 
 echo ': "result.txt \n' > result.txt
 
-grep '\<the +the\>'     -E sample.txt >> result.txt
-grep '\<(an) +\1\>'     -E sample.txt >> result.txt; echo '---' >> result.txt
-grep '\<([a-z]+) \1\>'  -E sample.txt >> result.txt
+grep '\<the +the\>'     -E -o sample.txt >> result.txt
+grep '\<(an) +\1\>'     -E -o sample.txt >> result.txt # only matching
+grep '\<([a-z]+) \1\>'  -E -c sample.txt >> result.txt # count
 
 cat sample.txt
 cat result.txt

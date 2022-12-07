@@ -1,8 +1,5 @@
 : "result.txt 
 
-the the theory
-an an answer
----
-the the theory
-an an answer
-cat cat category
+the the
+an an
+3
