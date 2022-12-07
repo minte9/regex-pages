@@ -1,9 +1,11 @@
 #!/bin/sh
 
 : "Backreference
-Parentheses can remember text matched by subexpression ([a-z]) \1 
+Parentheses can remember text matched by subexpression 
+    ([a-z]) \1 
 You can have more than one set of parentheses
 Use \1, \2, etc to refer to first, second
+
 Other uses of parantheses:
 To limit the scope of alternation (a|b)
 To group multiple characters to apply quantifiers (abc)? 
