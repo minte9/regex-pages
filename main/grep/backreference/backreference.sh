@@ -4,7 +4,7 @@
 Parentheses can remember text matched by subexpression 
     ([a-z]) \1 
 You can have more than one set of parentheses
-Use \1, \2, etc to refer to first, second
+Use \1, \2, etc to refer to first, second / -o only-matches
 
 Other uses of parantheses:
 To limit the scope of alternation (a|b)
