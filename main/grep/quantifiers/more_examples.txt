@@ -1,7 +1,4 @@
 : "examples.txt
 
-Correct php variable names:
 $a, $_b, $C, but not $1a
-
-Strings within double quotes:
 "abc", but not 'def' or "abc d
