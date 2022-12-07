@@ -1,4 +1,4 @@
-#Search for correct php variable names
+: "Search for correct php variable names"
 
 grep '$[a-zA-Z_][a-zA-Z_0-9]*' more_examples.txt --colour
 
