@@ -1,0 +1,4 @@
+: "sample.txt
+
+the the theory
+an an answer

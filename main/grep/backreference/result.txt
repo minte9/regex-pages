@@ -1,0 +1,5 @@
+: "result.txt 
+
+the the theory
+an an answer
+---
