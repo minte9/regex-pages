@@ -1,4 +1,8 @@
 : "examples.txt
 
 $a, $_b, $C, but not $1a
+
 "abc", but not 'def' or "abc d
+
+9:17 am
+12:30 pm
