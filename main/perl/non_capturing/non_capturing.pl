@@ -1,8 +1,9 @@
 #!/bin/perl -l
 
-# The surrounding ^$ ensures that the entire string contains only digits
-# You can use the special notation (?: ), which group but do not capture
-# This use of "?:" has no relation to the optional ? metacharacter
+=pod : "The surrounding ^$ ensures that the entire string contains only digits
+You can use the special notation (?: ), which group but do not capture
+This use of "?:" has no relation to the optional ? metacharacter
+=cut : "
 
 $s = "0728824242";
 if ($s =~ m/^[0-9]+$/) {
