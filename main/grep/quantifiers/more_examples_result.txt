@@ -1,0 +1,6 @@
+: "more_examples_result.txt 
+
+$a
+$_b
+$C
+"abc"
