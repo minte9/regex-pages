@@ -1,7 +1,7 @@
 : "result.txt 
 
-the the
-an an
 the the theory
 an an answer
-cat cat category
+the the
+an an
+cat cat
