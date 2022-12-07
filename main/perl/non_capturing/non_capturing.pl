@@ -7,13 +7,11 @@ This use of ?: has no relation to the optional ? metacharacter"
 =cut
 
 $s = "0728824242";
-
 if ($s =~ m/^[0-9]+$/) {
     print "only digits";
 }
 
 $s = "-98.6 F";
-
 if($s =~ m/^([-+]?[0-9]+(\.[0-9]*)?) (?:[CF])$/) {
     print $1; # -98.6
     print $2; # .6
