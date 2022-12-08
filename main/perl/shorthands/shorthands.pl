@@ -12,6 +12,7 @@ Among the more useful shorthands that Perl provide are:
 \t    tab character
 \n    newline character
 \r    carriage-return character
+\b    backspace
 \s    any whitespace character (space, tab, newline)
 \S    anything not s
 \w    [a-zA-Z0-9_]+ match a word with w+ 
