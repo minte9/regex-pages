@@ -1,8 +1,8 @@
 #!/bin/perl -l
 =pod /**
 The text matched (if any) is replaced by replacement
-\b word boundary
-/g global replacement modifier */
+For word boundary use \b
+For global replacement use \g modifier */
 =cut
 
 $a = 'Jeff Friedl';
