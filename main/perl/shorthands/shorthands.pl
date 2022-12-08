@@ -20,7 +20,9 @@ Among the more useful shorthands that Perl provide are:
 \D    [^0-9] anything not d */
 =cut 
 
-$s = "-98 F";
-if( $s =~ m/^([-+]?[0-9]+)\s*[CF]$/ ) {   #// \s*
+$s = '-98 F';
+$p = '^([-+]?[0-9]+)\s*[CF]$'; #// \s*
+
+if( $s =~ m/$p/ ) {
     print $1;   #// -98
 }
