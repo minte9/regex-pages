@@ -1,8 +1,10 @@
 #!/bin/perl -l
 =pod /**
-    The surrounding ^$ ensures that the entire string contains only digits
-    You can use the special notation (?: ), which group but not capture
-    This ?: has no relation to the optional ? metacharacter */
+
+The surrounding ^$ ensures that the entire string contains only digits
+You can use the special notation (?: ), which group but not capture
+This ?: has no relation to the optional ? metacharacter */
+
 =cut
 
 $s = "0728824242";
