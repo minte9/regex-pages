@@ -1,5 +1,6 @@
 #!/bin/perl -l
 =pod /**
+
 \b normaly matches a word boundary
 but, withing a character class, \b matches a backspace
 
