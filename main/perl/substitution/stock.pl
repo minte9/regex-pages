@@ -5,7 +5,7 @@ Remove digits from stock proces, so
     37.500 is reduced to 37.50
 Shorthand \d matches a digit, 
 Removes a third posible zero (if any) with [1-9]? 
-Group in parantheses to capture to $1 */
+Wrap in parantheses to capture to $1 */
 =cut
 
 $a = '12.37500000392';
