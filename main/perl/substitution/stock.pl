@@ -8,10 +8,10 @@ Metacharacter \d matches a digit,
 while [1-9]? removes a third posible zero (if any)
 =cut
 
-$price = "12.37500000392";
+$price = '12.37500000392';
 $price =~ s/(\d+.\d\d[1-9]?)\d*/$1/;
 print $price; #// 12.375
 
-$price = "37.500";
+$price = '37.500';
 $price =~ s/(\d+.\d\d[1-9]?)\d*/$1/;
 print $price; #// 37.50

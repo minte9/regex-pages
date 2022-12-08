@@ -5,9 +5,9 @@ The text matched (if any) is replaced by replacement
 /g global replacement modifier */
 =cut
 
-$a = "Jeff Friedl";
-$b = "Jeffrey Friedl";
-$c = "Jeff is Jeff Friedl";
+$a = 'Jeff Friedl';
+$b = 'Jeffrey Friedl';
+$c = 'Jeff is Jeff Friedl';
 
 $a =~ s/Jeff/Jeffrey/;
 $b =~ s/\bJeff\b/Jeffrey/; #// 
