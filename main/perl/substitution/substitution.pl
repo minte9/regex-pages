@@ -2,8 +2,7 @@
 =pod /**
 The text matched (if any) is replaced by replacement
 \b word boundary
-/g global replacement modifier 
-*/
+/g global replacement modifier */
 =cut
 
 $a = 'Jeff Friedl';
