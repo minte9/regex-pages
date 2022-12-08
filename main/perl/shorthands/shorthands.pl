@@ -2,7 +2,7 @@
 =pod
 
 \b normaly matches a word boundary
-but, withing a character class, \b matches a backspace
+but, withing a character-class, \b matches a backspace
 
 \s is a shorthand for a whole character-class, any whitespace character
 This includes space, tab, newline, and carriage return
