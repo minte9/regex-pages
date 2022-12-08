@@ -13,7 +13,7 @@ if ($s =~ m/^[0-9]+$/) {
 
 $s = "-98.6 F";
 if($s =~ m/^([-+]?[0-9]+(\.[0-9]*)?) (?:[CF])$/) {
-    print $1; # -98.6
-    print $2; # .6
-    print $3; # nothing (not captured)
+    print $1; #// -98.6
+    print $2; #// .6
+    print $3; #// nothing (not captured)
 }

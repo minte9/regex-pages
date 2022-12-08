@@ -21,6 +21,6 @@ Among the more useful shorthands that Perl provide are:
 =cut 
 
 $s = "-98 F";
-if($s =~ m/^([-+]?[0-9]+)\s*[CF]$/) { # \s*
+if($s =~ m/^([-+]?[0-9]+)\s*[CF]$/) { # // \s*
     print $1; # -98
 }
