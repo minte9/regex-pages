@@ -18,7 +18,7 @@ Among the more useful shorthands that Perl provide are:
 \w    [a-zA-Z0-9_]+ match a word with w+ 
 \W    [^a-zA-Z0-9_]+ anything not w 
 \d    [0-9] a digit
-\D    [^0-9] anything not d
+\D    [^0-9] anything not d */
 =cut 
 
 $s = "-98 F";
