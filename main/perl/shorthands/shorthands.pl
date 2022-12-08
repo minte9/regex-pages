@@ -1,6 +1,5 @@
 #!/bin/perl -l
 =pod /**
-
 \b normaly matches a word boundary
 but, withing a character class, \b matches a backspace
 
@@ -18,7 +17,6 @@ Among the more useful shorthands that Perl provide are:
 \W    [^a-zA-Z0-9_]+ anything not w 
 \d    [0-9] a digit
 \D    [^0-9] anything not d */
-
 =cut 
 
 $s = "-98 F";
