@@ -6,6 +6,7 @@ yet 37.500 is reduced to 37.50
 
 Metacharacter \d matches a digit, 
 while [1-9]? removes a third posible zero (if any)
+*/
 =cut
 
 $price = '12.37500000392';
