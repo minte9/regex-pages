@@ -8,7 +8,6 @@ but, withing a character class, \b matches a backspace
 This includes space, tab, newline, and carriage return
 
 Among the more useful shorthands that Perl provide are:
-
 \t    tab character
 \n    newline character
 \r    carriage-return character
