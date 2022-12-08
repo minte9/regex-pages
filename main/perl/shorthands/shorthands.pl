@@ -4,7 +4,7 @@
 \b normaly matches a word boundary
 but, withing a character class, \b matches a backspace
 
-\s is a shorthand for a whole character class, any whitespace character
+\s is a shorthand for a whole character-class, any whitespace character
 This includes space, tab, newline, and carriage return
 
 Among the more useful shorthands that Perl provide are:
