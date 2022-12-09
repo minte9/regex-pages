@@ -2,8 +2,8 @@
 
 : "Word boundaries, a common problem:
 A regex that match a word can also match it embedded 
-You can use metasequences \b if is supported by your software
-You can use metasequences \< and \>
+Use \b and \b
+Use \< and \>
 "
 
 A='gray grayscale'
