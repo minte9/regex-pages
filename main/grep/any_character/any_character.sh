@@ -5,11 +5,10 @@ Remember that metacharacters are different inside and outside a class
 [-./] more precise, [.] not the same as .
 "
 
-echo ': "result.txt \n' > result.txt
+A='19/03/2022'
+B='19-03-2022'
+C='1910312022'
 
-grep '19[-./]03[-./]2022'   sample.txt >> result.txt
-                            echo '---' >> result.txt
-grep '19.03.2022'           sample.txt >> result.txt
-
-cat 'sample.txt'
-cat 'result.txt'
+echo $A | grep '19[-./]03[-./]2022' -o | tee result.txt
+echo $B | grep '19[-./]03[-./]2022' -o | tee result.txt -a
+echo $C | grep '19.03.2022'         -o | tee result.txt -a
