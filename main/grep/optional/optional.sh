@@ -6,10 +6,8 @@ It is placed after the character that is optional
 Grouping for optional, is one of the main uses of parantheses
 "
 
-echo ': "result.txt \n' > result.txt
+A='color colour colur colou semicolon'
+B='4 4th 4th?'
 
-grep 'colou?r'  -E sample.txt >> result.txt
-grep '4(th)?$'  -E sample.txt >> result.txt
-
-cat 'sample.txt'
-cat 'result.txt'
+echo $A | grep 'colou?r' -o -E | tee result.txt
+echo $B | grep '4(th)?'  -o -E | tee result.txt -a

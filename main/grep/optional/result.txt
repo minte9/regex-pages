@@ -1,6 +1,5 @@
-: "result.txt 
-
 color
 colour
 4
+4th
 4th
