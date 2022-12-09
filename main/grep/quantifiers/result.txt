@@ -1,7 +1,1 @@
-: "result.txt 
-
-<H1>
-<H2>
-<H3 >
-<HR SIZE=14>
-<HR  SIZE = 14 >
+"abc"

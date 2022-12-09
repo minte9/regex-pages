@@ -1,9 +1,0 @@
-: "sample.txt
-
-<H1>
-<H2>
-<H3 >
-<H7>
-<HR SIZE=14>
-<HR  SIZE = 14 >
-<HRSIZE=14>
