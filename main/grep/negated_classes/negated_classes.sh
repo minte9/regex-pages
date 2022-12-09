@@ -20,4 +20,4 @@ newline \n character is not [^u]
 "
 
 echo 'Iraqi Iraqian miqra liquor qasida qintar qoph zaqqum Qantas Iraq' | 
-grep 'q[^u]' --colour
+grep 'q[^u]' --colour > result.txt
