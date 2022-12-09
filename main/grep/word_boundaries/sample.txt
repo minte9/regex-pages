@@ -1,6 +1,0 @@
-: "sample.txt
-
-gray
-grayscale
-cat
-category

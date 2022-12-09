@@ -1,6 +1,4 @@
-: "result.txt 
-
 gray
-grayscale
+gray
 cat
-cat
+dog

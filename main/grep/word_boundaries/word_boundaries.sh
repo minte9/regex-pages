@@ -6,11 +6,10 @@ You can use metasequences \b if is supported by your software
 You can use metasequences \< and \>
 "
 
-echo ': "result.txt \n' > result.txt
+A='gray grayscale'
+B='cat category'
+C='doggy dog'
 
-grep 'gray'         sample.txt >> result.txt
-grep '\b(cat)\b' -E sample.txt >> result.txt
-grep '\<cat\>'   -E sample.txt >> result.txt
-
-cat 'sample.txt'
-cat 'result.txt'
+echo $A | grep 'gray'         -o | tee result.txt
+echo $B | grep '\b(cat)\b' -E -o | tee result.txt -a
+echo $C | grep '\<dog\>'   -E -o | tee result.txt -a
