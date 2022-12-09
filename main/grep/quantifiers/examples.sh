@@ -15,6 +15,6 @@ C='
 12:30 pm
 '
 
-echo $A | grep '\$[a-zA-Z_][a-zA-Z_0-9]*'               -o -E | tee result2.txt
-echo $B | grep '"[^"]*"'                                -o -E | tee result2.txt -a
-echo $C | grep '\<(1[012]|[1-9]):[0-5][0-9]\> (am|pm)'  -o -E | tee result2.txt -a
+echo $A | grep '\$[a-zA-Z_][a-zA-Z_0-9]*'               -o -E | tee res2.txt
+echo $B | grep '"[^"]*"'                                -o -E | tee res2.txt -a
+echo $C | grep '\<(1[012]|[1-9]):[0-5][0-9]\> (am|pm)'  -o -E | tee res2.txt -a
