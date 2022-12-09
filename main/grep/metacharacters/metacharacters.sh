@@ -18,5 +18,5 @@ B='At the end dog'
 C='Birds everywhere bird'
 
 echo $A | grep '^cat' -i -o | tee result.txt
-echo $B | grep 'dog$' -i -o | tee -a result.txt
-echo $C | grep 'bird' -i -o | tee -a result.txt
+echo $B | grep 'dog$' -i -o | tee result.txt -a
+echo $C | grep 'bird' -i -o | tee result.txt -a
