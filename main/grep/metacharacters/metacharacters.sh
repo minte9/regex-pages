@@ -17,11 +17,11 @@ A='Cat at the beggining'
 B='At the end dog'
 C='Birds everywhere bird'
 
-echo $A | grep '^cat' -i > result.txt
+echo $A | grep '^cat' -i -o > result.txt
 echo $A | grep '^cat' -i --color
 
-echo $B | grep 'dog$' -i >> result.txt
+echo $B | grep 'dog$' -i -o >> result.txt
 echo $B | grep 'dog$' -i --color
 
-echo $C | grep 'bird' -i >> result.txt
+echo $C | grep 'bird' -i -o >> result.txt
 echo $C | grep 'bird' -i --color
