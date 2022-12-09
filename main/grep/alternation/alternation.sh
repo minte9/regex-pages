@@ -12,12 +12,12 @@ Alternation is part of the main regex language
 Character classes are almost like their own special mini-language
 "
 
-echo ': "result.txt \n' > result.txt
+A='Bob Robert John'
+B='gray grey greay greey'
+C='First Street Fir1st Sstreet 1st street' 
+D='Third Thi|3rd 3rd'
 
-grep 'Bob|Robert'           -E sample.txt >> result.txt
-grep 'gr(a|e)y'             -E sample.txt >> result.txt
-grep '(Fir|1)st [Ss]treet'  -E sample.txt >> result.txt
-grep '[Thi|3]rd'            -E sample.txt >> result.txt
-
-cat 'sample.txt'
-cat 'result.txt'
+echo $A | grep 'Bob|Robert'          -o -E | tee result.txt
+echo $B | grep 'gr(a|e)y'            -o -E | tee result.txt -a
+echo $C | grep '(Fir|1)st [Ss]treet' -o -E | tee result.txt -a
+echo $D | grep '[Thi|3]+rd'          -o -E | tee result.txt -a
