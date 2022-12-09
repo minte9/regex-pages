@@ -13,6 +13,15 @@ Grep understands bytes and lines
 when no metacharacters, plain text search
 "
 
-grep '^cat' sample.txt -i --color
-grep 'dog$' sample.txt -i --color
-grep 'bird' sample.txt -i --color
+A='Cat at the beggining'
+B='At the end dog'
+C='Birds everywhere bird'
+
+echo $A | grep '^cat' -i > result.txt
+echo $A | grep '^cat' -i --color
+
+echo $B | grep 'dog$' -i >> result.txt
+echo $B | grep 'dog$' -i --color
+
+echo $C | grep 'bird' -i >> result.txt
+echo $C | grep 'bird' -i --color
