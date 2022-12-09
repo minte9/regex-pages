@@ -19,9 +19,4 @@ q[^u] doesn't match Iraq, because q is at the end
 newline \n character is not [^u]
 "
 
-echo ': "result.txt \n' > result.txt
-
-grep 'q[^u]' sample.txt --colour >> result.txt
-
-cat sample.txt
-cat result.txt
+grep 'q[^u]' sample.txt --colour > result.txt
