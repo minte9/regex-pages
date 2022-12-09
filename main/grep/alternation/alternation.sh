@@ -1,3 +1,5 @@
+#!/bin/sh
+
 : "Alterantion
 Bob|Robert is one regex that matches either
 
@@ -17,7 +19,9 @@ B='gray grey greay greey'
 C='First Street Fir1st Sstreet 1st street' 
 D='Third Thi|3rd 3rd'
 
-echo $A | grep 'Bob|Robert'          -o -E | tee result.txt
+echo ': "result.txt' > result.txt
+
+echo $A | grep 'Bob|Robert'          -o -E | tee result.txt -a
 echo $B | grep 'gr(a|e)y'            -o -E | tee result.txt -a
 echo $C | grep '(Fir|1)st [Ss]treet' -o -E | tee result.txt -a
 echo $D | grep '[Thi|3]+rd'          -o -E | tee result.txt -a
