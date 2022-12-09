@@ -19,5 +19,5 @@ $p = '^([-+]?[0-9]+(\.[0-9]*)?) (?:[CF])$';
 if( $s =~ m/$p/) {
     print $1;   # -98.6
     print $2;   # .6
-    print $3;   # nothing (not captured)
+    print $3;   # NULL (not captured)
 }
