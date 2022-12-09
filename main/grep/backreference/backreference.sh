@@ -11,14 +11,17 @@ To limit the scope of alternation (a|b)
 To group multiple characters to apply quantifiers (abc)? 
 "
 
-echo ': "result.txt \n' > result.txt
+A='
+the the theory
+the theory
+an an answer
+an answer
+cat cat category
+cat category
+'
 
-grep '\<the +the\>'        -E sample.txt >> result.txt
-grep '\<(an) +\1\>'        -E sample.txt >> result.txt
-grep '\<([a-z]+) \1\>'  -o -E sample.txt >> result.txt
+echo $A | grep '\<the +the\>'     -o -E | tee result.txt
+echo $A | grep '\<(an) +\1\>'     -o -E | tee result.txt -a
+echo $A | grep '\<([a-z]+) \1\>'  -o -E | tee result.txt -a
 
-cat sample.txt
-cat result.txt
-
-echo '---'
-grep '\<([a-z]+) \1\>'  -E sample.txt --colour
+echo $A | grep '\<([a-z]+) \1\>'  -E --colour

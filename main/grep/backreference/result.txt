@@ -1,7 +1,5 @@
-: "result.txt 
-
-the the theory
-an an answer
+the the
+an an
 the the
 an an
 cat cat
