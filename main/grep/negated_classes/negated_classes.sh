@@ -19,4 +19,5 @@ q[^u] doesn't match Iraq, because q is at the end
 newline \n character is not [^u]
 "
 
-grep 'q[^u]' sample.txt --colour > result.txt
+echo 'Iraqi Iraqian miqra liquor qasida qintar qoph zaqqum Qantas Iraq' | 
+grep 'q[^u]' --colour
