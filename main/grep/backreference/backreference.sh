@@ -23,5 +23,4 @@ cat category
 echo $A | grep '\<the +the\>'     -o -E | tee result.txt
 echo $A | grep '\<(an) +\1\>'     -o -E | tee result.txt -a
 echo $A | grep '\<([a-z]+) \1\>'  -o -E | tee result.txt -a
-
 echo $A | grep '\<([a-z]+) \1\>'  -E --colour
