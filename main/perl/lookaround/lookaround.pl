@@ -21,7 +21,7 @@ $a = 'Jeffrey Friedl, Jeff Friedl';
 $c = 'Jeffs articles';
 
 $a =~ s/(?=Jeffrey)(Jeff)/by $1/;   # // lookahead for Jeffrey, then Jeff
-$c =~ s/(?<=\bJeff)(?=s\b)/'/g;     # // lookbehind for \bJeff
+$c =~ s/(?<=\bJeff)(?=s\b)/'/g;     # // lookbehind for \bJeff '
 
 print $a; # // by Jeffrey Friedl, Jeff Friedl
 print $c; # // Jeff's articles
