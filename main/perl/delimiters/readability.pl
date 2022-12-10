@@ -8,11 +8,11 @@ This modifier does two simple but powerful things
 First, it causes most whitespaces to be ignored
 Secondly, it allows comments with a leading #
 
+Example: Search and replace email address
+
 =cut
 
 $a = 'jfriedl@regex.info';
-
-# search and replace
 $a =~ s{    
     # capture the email address to $1
     (    
@@ -22,6 +22,8 @@ $a =~ s{
         # hosname regex
         @[-a-z0-9]+(?:\.[-_a-z0-9]+)*\.(?:com|edu|info) 
     )    
-    }{<a href="mailto:$1">$1<\/a>}gix; # x modifier - Wow!
+    }{<a href="mailto:$1">$1<\/a>}gix; 
+        # x modifier - Wow!
 
-print $a; # <a href="mailto:jfriedl@regex.info">jfriedl@regex.info</a>
+print $a; 
+    # <a href="mailto:jfriedl@regex.info">jfriedl@regex.info</a>
