@@ -10,7 +10,7 @@ Secondly, it allows comments with a leading #
 
 =cut
 
-$a = 'jfriedl123_@regex.123.info';
+$a = 'jfriedl@regex.info';
 
 # search and replace
 $a =~ s{    
@@ -24,5 +24,4 @@ $a =~ s{
     )    
     }{<a href="mailto:$1">$1<\/a>}gix; # x modifier - Wow!
 
-print $a; 
-# <a href='mailto:jfriedl123_@regex.123.info'>jfriedl123_@regex.123.info</a>
+print $a; # <a href="mailto:jfriedl@regex.info">jfriedl@regex.info</a>
