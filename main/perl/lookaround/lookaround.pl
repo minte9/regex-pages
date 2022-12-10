@@ -30,10 +30,10 @@ print $a; # // by Jeffrey Friedl, Jeff Friedl
 print $b; # // Jeff's articles
 print $c; # // Jeff's articles
 
-$d = "The population of 2298444215 is growing";
-$e = "The population of 2298444215 is growing";
-$f = "12345Hz";
-$g = "12345Hz";
+$d = 'The population of 2298444215 is growing';
+$e = 'The population of 2298444215 is growing';
+$f = '12345Hz';
+$g = '12345Hz';
 
 $d =~ s/(?<=\d)(?=(\d\d\d)+)/,/g;       # // lookahead for 3 digits
 $e =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # // we add \b
