@@ -18,25 +18,22 @@ Commafying numbers */
 =cut
 
 $a = 'Jeffrey Friedl, Jeff Friedl';
-$c = 'Jeffs articles';
-
-$a =~ s/(?=Jeffrey)(Jeff)/by $1/;   # // lookahead for Jeffrey, then Jeff
-$c =~ s/(?<=\bJeff)(?=s\b)/'/g;     # // lookbehind for \bJeff '
-
-print $a; # // by Jeffrey Friedl, Jeff Friedl
-print $c; # // Jeff's articles
-
+$b = 'Jeffs articles';
+$c = 'The population of 2298444215 is growing';
 $d = 'The population of 2298444215 is growing';
-$e = 'The population of 2298444215 is growing';
+$e = '12345Hz';
 $f = '12345Hz';
-$g = '12345Hz';
 
-$d =~ s/(?<=\d)(?=(\d\d\d)+)/,/g;       # // lookahead for 3 digits
-$e =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # // we add \b
-$f =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # // doesn't match
-$f =~ s/(?<=\d)(?=(\d\d\d)+(?!\d))/,/g; # // (?!\d) as 3 digits boundary
+$a =~ s/ (?=Jeffrey)(Jeff) /by $1/;       # // lookahead for Jeffrey, then Jeff
+$b =~ s/ (?<=\bJeff)(?=s\b) /'/g;         # // lookbehind for \bJeff
+$c =~ s/ (?<=\d)(?=(\d\d\d)+) /,/g;       # // lookahead for 3 digits
+$d =~ s/ (?<=\d)(?=(\d\d\d)+\b) /,/g;     # // we add \b
+$e =~ s/ (?<=\d)(?=(\d\d\d)+\b) /,/g;     # // doesn't match
+$f =~ s/ (?<=\d)(?=(\d\d\d)+(?!\d)) /,/g; # // (?!\d) as 3 digits boundary
 
+print $a;  # // by Jeffrey Friedl, Jeff Friedl
+print $b;  # // Jeff's articles
+print $c;  # // 2,2,9,8,4,4,4,215
 print $d;  # // 2,2,9,8,4,4,4,215
-print $e;  # // 2,2,9,8,4,4,4,215
-print $f;  # // 12345Hz
-print $g;  # // 12,345Hz
+print $e;  # // 12345Hz - dont match
+print $f;  # // 12,345Hz
