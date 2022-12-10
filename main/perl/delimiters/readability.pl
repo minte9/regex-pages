@@ -10,21 +10,19 @@ Secondly, it allows comments with a leading #
 
 =cut
 
-$a = 'jfriedl@regex.info';
+$a = 'jfriedl123_@regex.123.info';
 
 # search and replace
 $a =~ s{    
     # capture the email address to $1
     (    
         # username regex
-        [-a-zA-Z0-9]+
-        
-        # email sign
-        @
-        
+        [-a-zA-Z0-9._]+
+
         # hosname regex
-        [-a-z0-9]+(?:\.[-_a-z0-9]+)*\.(?:com|edu|info) 
+        @[-a-z0-9]+(?:\.[-_a-z0-9]+)*\.(?:com|edu|info) 
     )    
     }{<a href='mailto:$1'>$1</a>}gix; # x modifier - Wow!
 
-print $a; # <a href='mailto:jfriedl@regex.info'>jfriedl@regex.info</a>
+print $a; 
+# <a href='mailto:jfriedl123_@regex.123.info'>jfriedl123_@regex.123.info</a>
