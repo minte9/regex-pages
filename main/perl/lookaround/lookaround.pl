@@ -21,7 +21,7 @@ $d = 'The population is 2298444215';
 $e = '12345Hz';
 $f = '12345Hz';
 
-$a =~ s/(?=Jeffrey)(Jeff)/by $1/g;       # lookahead for Jeffrey, then Jeff
+$a =~ s/(?=Jeffrey)(Jeff)/by $1/g;      # lookahead for Jeffrey, then Jeff
 $b =~ s/(?<=\bJeff)(?=s\b)/'/g;         # lookbehind for \bJeff
 $c =~ s/(?<=\d)(?=(\d\d\d)+)/,/g;       # lookahead for 3 digits
 $d =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # we add \b
