@@ -12,22 +12,18 @@ Positive Lookahead (?= )    successful if can MATCH to the RIGHT
 Positive Lookbehind (?<= )  successful if can MATCH to the LEFT
 Negative Lookahead (?! )    successful if can NOT match to the RIGHT
 
-a) Matches "Jeff" only if it is part of "Jeffrey"
-b) Replace "Jeffs" with "Jeff's"
-c) Replace "Jeffs" with "Jeff's" (with lookbehind)
-d) Commafying numbers */
+Matches "Jeff" only if it is part of "Jeffrey" (lookahead)
+Replace "Jeffs" with "Jeff's" (with lookbehind)
+Commafying numbers */
 =cut
 
 $a = 'Jeffrey Friedl, Jeff Friedl';
-$b = 'Jeffs articles';
 $c = 'Jeffs articles';
 
 $a =~ s/(?=Jeffrey)(Jeff)/by $1/;   # // lookahead for Jeffrey, then Jeff
-$b =~ s/\bJeff(?=s\b)/Jeff'/g;      # // lookahead for s\b
 $c =~ s/(?<=\bJeff)(?=s\b)/'/g;     # // lookbehind for \bJeff
 
 print $a; # // by Jeffrey Friedl, Jeff Friedl
-print $b; # // Jeff's articles
 print $c; # // Jeff's articles
 
 $d = 'The population of 2298444215 is growing';
