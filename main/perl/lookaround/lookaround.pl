@@ -3,10 +3,8 @@
 
 Is important to understand that the lookaround 
 don't actually "consume" any text
-
-The regex /Jeffrey/ matches Jeffrey in "Jeffrey Friedl"
 The regex lookahead, (?=Jeffrey) matches only the location 
-    (position) before Jeffrey
+(position) before Jeffrey
 
 Positive Lookahead (?= )    successful if can MATCH to the RIGHT
 Positive Lookbehind (?<= )  successful if can MATCH to the LEFT
