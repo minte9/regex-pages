@@ -32,9 +32,9 @@ $d =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # we add \b
 $e =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # doesn't match
 $f =~ s/(?<=\d)(?=(\d\d\d)+(?!\d))/,/g; # (?!\d) as 3 digits boundary
 
-print $a;  # by Jeffrey Friedl, Jeff Friedl
-print $b;  # Jeff's articles
-print $c;  # The population of 2,2,9,8,4,4,4,215 is growing
-print $d;  # The population of 2,298,444,215 is growing
-print $e;  # 12345Hz - dont match
-print $f;  # 12,345Hz
+print $a; # by Jeffrey Friedl, Jeff Friedl
+print $b; # Jeff's articles
+print $c; # The population of 2,2,9,8,4,4,4,215 is growing
+print $d; # The population of 2,298,444,215 is growing
+print $e; # 12345Hz - dont match
+print $f; # 12,345Hz
