@@ -1,7 +1,7 @@
 #!/bin/perl -l
 =begin
 
-Lookaround don't actually "consume" any text
+Lookaround doesn't actually "consume" any text
 Matches only the location (position)
 
 Positive Lookahead (?= )    successful if can MATCH to the RIGHT
