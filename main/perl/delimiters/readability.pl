@@ -7,7 +7,6 @@ Perl allows /x modifier, to rewrite regex on multiple lines
 This modifier does two simple but powerful things
 First, it causes most whitespaces to be ignored
 Secondly, it allows comments with a leading #
-
 Example: Search and replace email address
 
 =cut
