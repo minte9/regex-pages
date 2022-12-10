@@ -18,12 +18,12 @@ c) Replace "Jeffs" with "Jeff's" (with lookbehind)
 d) Commafying numbers */
 =cut
 
-$a = "Jeffrey Friedl, Jeff Friedl";
-$b = "Jeffs articles";
-$c = "Jeffs articles";
+$a = 'Jeffrey Friedl, Jeff Friedl';
+$b = 'Jeffs articles';
+$c = 'Jeffs articles';
 
 $a =~ s/(?=Jeffrey)(Jeff)/by $1/;   # // lookahead for Jeffrey, then Jeff
-$b =~ s/\bJeff(?=s\b)/Jeff\'/g;      # // lookahead for s\b
+$b =~ s/\bJeff(?=s\b)/Jeff'/g;      # // lookahead for s\b
 $c =~ s/(?<=\bJeff)(?=s\b)/'/g;     # // lookbehind for \bJeff
 
 print $a; # // by Jeffrey Friedl, Jeff Friedl
