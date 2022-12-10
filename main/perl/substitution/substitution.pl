@@ -1,5 +1,5 @@
 #!/bin/perl -l
-=pod /**
+=begin /**
 
 The text matched (if any) is replaced by replacement
 For word boundary use \b

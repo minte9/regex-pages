@@ -1,5 +1,5 @@
 #!/bin/perl -l
-=pod /**
+=begin /**
 
 Remove digits from stock proces, so
     12.37500000392 is reduce to 12.375, yet

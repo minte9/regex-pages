@@ -1,5 +1,5 @@
 #!/bin/perl -l
-=pod /**
+=begin /**
 
 The surrounding ^$ ensures that the entire string contains only digits
 You can use the special notation (?: ), which group but not capture
