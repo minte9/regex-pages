@@ -16,7 +16,6 @@ Commafying numbers
 
 =cut
 
-
 $a = 'Jeffrey Friedl, Jeff Friedl';
 $b = 'Jeffs articles';
 $c = 'The population of 2298444215 is growing';
@@ -24,14 +23,12 @@ $d = 'The population of 2298444215 is growing';
 $e = '12345Hz';
 $f = '12345Hz';
 
-
 $a =~ s/(?=Jeffrey)(Jeff)/by $1/;       # lookahead for Jeffrey, then Jeff
 $b =~ s/(?<=\bJeff)(?=s\b)/'/g;         # lookbehind for \bJeff
 $c =~ s/(?<=\d)(?=(\d\d\d)+)/,/g;       # lookahead for 3 digits
 $d =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # we add \b
 $e =~ s/(?<=\d)(?=(\d\d\d)+\b)/,/g;     # doesn't match
 $f =~ s/(?<=\d)(?=(\d\d\d)+(?!\d))/,/g; # (?!\d) as 3 digits boundary
-
 
 print $a; # by Jeffrey Friedl, Jeff Friedl
 print $b; # Jeff's articles
