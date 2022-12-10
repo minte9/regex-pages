@@ -24,4 +24,5 @@ $a =~ s{
     }{<a href="mailto:$1">$1<\/a>}gix; # /x
 
 print $a; 
-    # <a href="mailto:jfriedl@regex.info">jfriedl@regex.info</a>
+
+# <a href="mailto:jfriedl@regex.info">jfriedl@regex.info</a>
