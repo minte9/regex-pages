@@ -3,13 +3,11 @@
 
 Lookaround doesn't actually "consume" any text
 Matches only the location (position)
-
-Positive Lookahead (?= )    successful if can MATCH to the RIGHT
-Positive Lookbehind (?<= )  successful if can MATCH to the LEFT
-Negative Lookahead (?! )    successful if can NOT match to the RIGHT
+Lookahead (?= ) successful if can MATCH to the RIGHT
+Lookbehind (?<= ) successful if can MATCH to the LEFT
+Negative Lookahead (?! ) successful if can NOT match to the RIGHT
 
 Examples:
-
 Matches "Jeff" only if it is part of "Jeffrey" (lookahead)
 Replace "Jeffs" with "Jeff's" (with lookbehind)
 Commafying numbers
