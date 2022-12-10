@@ -15,7 +15,7 @@ Negative Lookahead (?! )    successful if can NOT match to the RIGHT
 a) Matches "Jeff" only if it is part of "Jeffrey"
 b) Replace "Jeffs" with "Jeff's"
 c) Replace "Jeffs" with "Jeff's" (with lookbehind)
-d) Commafying numbers
+d) Commafying numbers */
 =cut
 
 $a = "Jeffrey Friedl, Jeff Friedl";
