@@ -16,8 +16,8 @@ Commafying numbers
 
 $a = 'Jeffrey Friedl, Jeff Friedl';
 $b = 'Jeffs articles';
-$c = 'The population of 2298444215 is growing';
-$d = 'The population of 2298444215 is growing';
+$c = 'The population is 2298444215';
+$d = 'The population is 2298444215';
 $e = '12345Hz';
 $f = '12345Hz';
 
@@ -30,7 +30,7 @@ $f =~ s/(?<=\d)(?=(\d\d\d)+(?!\d))/,/g; # (?!\d) as 3 digits boundary
 
 print $a; # by Jeffrey Friedl, Jeff Friedl
 print $b; # Jeff's articles
-print $c; # The population of 2,2,9,8,4,4,4,215 is growing
-print $d; # The population of 2,298,444,215 is growing
+print $c; # The population is 2,2,9,8,4,4,4,215
+print $d; # The population is 2,298,444,215
 print $e; # 12345Hz - dont match
 print $f; # 12,345Hz
