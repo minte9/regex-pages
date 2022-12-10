@@ -2,7 +2,7 @@
 =begin
 
 Lookaround don't actually "consume" any text
-(?=Jeffrey) matches only the location (position) before Jeffrey
+Matches only the location (position)
 
 Positive Lookahead (?= )    successful if can MATCH to the RIGHT
 Positive Lookbehind (?<= )  successful if can MATCH to the LEFT
