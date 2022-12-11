@@ -11,7 +11,8 @@ The standard quantifiers (?, *, +, and {min,max}) are greedy
 They always attempt to match as much as possible
 
 Rule 3
-They settle for less only when matching too much ends up causing the regex to fail
+They settle for less only when matching too much ends up 
+causing the regex to fail
 
 =cut
 
