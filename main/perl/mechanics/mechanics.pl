@@ -34,4 +34,4 @@ $c = "about 24 characters long";
 $c =~ m/^.*([0-9][0-9])/; 
 print $1; 
     # 24
-    # The .* is forced to give up 'g', then 'n', ..., until 4
+    # The .* is forced to give up g, then n, ... until 4
