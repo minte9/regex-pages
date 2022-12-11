@@ -24,12 +24,14 @@ print $a;
 
 $b = "regexS";
 $b =~ m/(\w+)S/;
-print $1; # regex
+print $1; 
+    # regex
     # The \w+ alone is happy to match the entire word
     # But, if it does, it leaves nothing for S to match
 
 
 $c = "about 24 characters long";
 $c =~ m/^.*([0-9][0-9])/; 
-print $1; # 24
+print $1; 
+    # 24
     # The .* is forced to give up 'g', then 'n', ..., until 4
