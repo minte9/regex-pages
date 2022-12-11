@@ -18,7 +18,8 @@ causing the regex to fail
 
 $a = "The dragging belly indicates your cat is to fat";
 $a =~ s/(fat|cat|belly|your)/X/;
-print $a; # The dragging X indicates your cat is to fat
+print $a; 
+    # The dragging X indicates your cat is to fat
 
 
 $b = "regexS";
