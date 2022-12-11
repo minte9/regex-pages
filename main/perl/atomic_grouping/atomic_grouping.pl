@@ -14,4 +14,4 @@ $a = "¡Hola!";
 $b = "¡Hola!";
 
 print ($a =~ m/¡(.*)!/);    # Hola
-print ($b =~ m/¡(?>.*)!/);  # Null // not matching
+print ($b =~ m/¡(?>.*)!/);  #   // not matching
