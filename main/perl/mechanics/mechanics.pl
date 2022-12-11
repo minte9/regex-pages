@@ -21,25 +21,14 @@ $a =~ s/(fat|cat|belly|your)/X/;
 print $a; # The dragging X indicates your cat is to fat
 
 
-=begin
-
-The \w+ alone is happy to match the entire word
-But, if it does, it leaves nothing for S to match
-
-=cut
-
 $b = "regexS";
 $b =~ m/(\w+)S/;
 print $1; # regex
+    # The \w+ alone is happy to match the entire word
+    # But, if it does, it leaves nothing for S to match
 
-
-=begin
-
-.* is forced to give up 'g', then 'n', ..., until 4
-
-=cut
 
 $c = "about 24 characters long";
 $c =~ m/^.*([0-9][0-9])/; 
 print $1; # 24
-    
+    # The .* is forced to give up 'g', then 'n', ..., until 4
